@@ -37,6 +37,7 @@ export class CategoryComponent implements OnInit {
   ngOnInit() {
     this.cardsPerPage = this.getCardsPerPage();
     this.initializeSlider();
+    this.getAllCategories();
   }
 
   getAllCategories(){
@@ -56,7 +57,7 @@ export class CategoryComponent implements OnInit {
   }
 
   getCardsPerPage() {
-    return Math.floor(this.container.nativeElement.offsetWidth / 200);
+    return Math.floor(this.container.nativeElement.offsetWidth / 300);
   }
 
   changePage(incrementor: number) {

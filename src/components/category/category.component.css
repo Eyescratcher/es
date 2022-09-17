@@ -1,3 +1,13 @@
+h1{
+  margin-top: 20px;
+  margin-left: 160px;
+  margin-bottom: 20px;
+}
+
+h1:hover{
+  color: rgb(255, 157, 0);
+}
+
 .w-100 {
     width: 100%!important;
   }
@@ -6,6 +16,7 @@
     display: flex;
     position: relative;
     justify-content: center;
+    margin-bottom: 40px;
   }
   
   .cards {
@@ -19,9 +30,9 @@
   }
   
   .card {
-    height: 300px;
+    height: 220px;
     background-color: #e0e1e2;
-    border-radius: 5px;
+    border-radius: 10px;
     display: inline-block;
     margin-right: 10px;
     position: relative;
@@ -32,7 +43,7 @@
   }
   
   .card span {
-    font-size:48px;
+    font-size:38px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -43,14 +54,15 @@
   .right {
     height: 30px;
     width: 30px;
-    background-color: #0072bc;
+    background-color: rgb(255, 157, 0);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    border-radius: 50%;
   }
   
   .left.disabled, .right.disabled {
-    background-color:#CCC;
+    background-color:white;
   }
   
   .left {
