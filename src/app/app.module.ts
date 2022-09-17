@@ -8,6 +8,7 @@ import { HomeComponent } from '../components/home/home.component';
 import { HeaderComponent } from '../components/header/header.component';
 import { FormsModule } from '@angular/forms';
 import { CategoryComponent } from '../components/category/category.component';
+import { ProviderComponent } from '../components/provider/provider.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CategoryComponent } from '../components/category/category.component';
     FooterComponent,
     HomeComponent,
     HeaderComponent,
-    CategoryComponent
+    CategoryComponent,
+    ProviderComponent
   ],
   imports: [
     BrowserModule,
