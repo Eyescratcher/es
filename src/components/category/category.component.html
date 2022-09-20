@@ -12,6 +12,6 @@
 		</a>
 	</div>
 	<div class="right" *ngIf="totalPages > 1" (click)="currentPage != totalPages && changePage(+1)"
-		[ngClass]="{'disabled':currentPage === totalPages}"><i class="fa-solid fa-circle-chevron-right"></i>
+		[ngClass]="{'disabled':currentPage === totalPages}">
 	</div>
 </div>
