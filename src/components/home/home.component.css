@@ -1,11 +1,42 @@
-div{
-    margin-top: 20px;
-    margin-left: 120px;
-    width: 50%;
+.homeParagraph1{
+  text-align:left;
+  position:justify;
+  margin-right:900px;
+  margin-left:45px;
+  font-size:18px;
 }
 
+.homeParagraph2{
+  text-align:left;
+  position:justify;
+  margin-right:900px;
+  margin-left:45px;
+  margin-bottom:1rem;
+  font-size:18px;
+}
+
+.homeParagraph3{
+  text-align:left;
+  position:justify;
+  margin-right:900px;
+  margin-left:45px;
+  margin-bottom:1rem;
+  font-size:22px;
+}
+
+.homeParagraph4{
+  text-align:left;
+  position:justify;
+  margin-right:900px;
+  margin-left:45px;
+  font-size:18px;
+}
+
+
 h1{
-    color: rgb(255, 157, 0);
-    text-decoration: underline;
-    margin-bottom: 4rem;
-  }
+  margin-left:20px;
+}
+
+span{
+  color:rgb(255, 157, 0);
+}
