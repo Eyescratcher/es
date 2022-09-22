@@ -9,6 +9,7 @@
       flex-wrap: wrap;
       list-style-type: none;
       padding: 0;
+      text-decoration: none;
     }
     ul li a{
       height: 15rem;
@@ -36,7 +37,7 @@
       align-items: center;
     }
     .category{
-      font-size: small;
+      font-size: large;
     }
 
     h1:hover{
@@ -45,4 +46,7 @@
 
     h1{
       text-align: center;
+    }
+    .name{
+      text-decoration: none;
     }
