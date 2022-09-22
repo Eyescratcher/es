@@ -2,29 +2,11 @@
 
 <h1>Providers </h1>
 
-<!-- <div class="container" #container>
-	<div class="left" *ngIf="totalPages > 1" (click)="currentPage != 1 && changePage(-1)" [ngClass]="{'disabled':currentPage === 1}"></div>
-	<div class="cards" [ngClass]="{'w-100': totalPages === 1}">
-		<a href="" routerLink="/Calendar">
-			<div class="overflow" [ngStyle]="{'width': overflowWidth, 'left': pagePosition}" >
-				<div class="card" *ngFor="let provider of providers" [ngStyle]="{'width': cardWidth}">
-					<div *ngIf="searchItem === '' || provider.Name.toLowerCase().includes(searchItem)">
-						{{provider.Name}}
-					</div>
-				</div>
-			</div>
-		</a>
-	</div>
-	<div class="right" *ngIf="totalPages > 1" (click)="currentPage != totalPages && changePage(+1)"
-		[ngClass]="{'disabled':currentPage === totalPages}">
-	</div>
-</div> -->
-
 <ul class="sc">
-	<li *ngFor="let provider of providers">
+	<li *ngFor="let provider of providers.Providers">
 		<div class="container" *ngIf="searchItem === '' || provider.Name.toLowerCase().includes(searchItem)">
 			<a href="" routerLink="/Calendar">
-				<img src="" alt="">
+				<img src="{{provider.ImgURL}}" style="height:12rem" alt="">
 				<div class="content">
 					<div class="name">
 						{{provider.Name}}

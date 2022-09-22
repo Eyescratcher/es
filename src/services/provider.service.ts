@@ -13,4 +13,9 @@ export class ProviderService {
   getProviders(){
     return this.http.get(this.URL);
   }
+
+  getProvById(id:number){
+   // let params={}.append
+    return this.http.get(this.URL + `${id}`)
+  }
 }

@@ -5,8 +5,11 @@
 	<div class="cards" [ngClass]="{'w-100': totalPages === 1}">
 		<a href="" routerLink="/Provider">
 			<div class="overflow" [ngStyle]="{'width': overflowWidth, 'left': pagePosition}">
-				<div class="card" *ngFor="let category of categories" [ngStyle]="{'width': cardWidth}">
-					<span>{{category.Category}}</span>
+				<div class="card" *ngFor="let category of categories" [ngStyle]="{'width': cardWidth}" >
+					<div (click)="setId(category.ServiceCategoryId)">
+						<span>{{category.Category}}</span>
+					</div>
+					
 				</div>
 			</div>
 		</a>

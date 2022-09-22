@@ -13,4 +13,8 @@ export class CategoryService {
   getServCategory(){
     return this.http.get(this.URL);
   }
+
+  getCategoryById(id:number){
+    return this.http.get(this.URL + `/${id}`)
+  }
 }
